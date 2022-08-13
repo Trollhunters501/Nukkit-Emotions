@@ -1,0 +1,13 @@
+main: Creadores.ninjacr.Emotions.Main
+name: Emotions
+authors: [NinjaCR & Trollhunters501]
+description: "Expresa Tus sentimientos!"
+website: "https://wode490390.cn/"
+version: "${pom.version}"
+api: ["1.0.0"]
+load: POSTWORLD
+
+
+
+
+
