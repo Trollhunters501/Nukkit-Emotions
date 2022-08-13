@@ -6,16 +6,16 @@ import cn.nukkit.event.Listener;
 
 public class Main extends PluginBase implements Listener {
 	public void onEnable() {
-        this.getLogger().info("§eCargando...");
+        this.getLogger().info("§eLoading...");
         this.getServer().getPluginManager().registerEvents(this, this);
 		CommandMap cmd = this.getServer().getCommandMap();
 		cmd.register("help", new BCommand(this));
-        this.getLogger().info("§aCargado!");
+        this.getLogger().info("§aLoaded!");
 		
 	}
 	public void onDisable() {
-		this.getLogger().info("§cDesactivando...!");
-        this.getLogger().info("§cDesactivado!");
+		this.getLogger().info("§cDeactivating...!");
+        this.getLogger().info("§cDisabled!");
 	}
 	
 }
