@@ -1,7 +1,7 @@
 main: Creadores.ninjacr.Emotions.Main
 name: Emotions
 authors: [NinjaCR & Creadores]
-description: "Expresa Tus sentimientos!"
+description: "Express your emotions!"
 website: "https://github.com/Trollhunters501/Nukkit-Emotions"
 version: "1.0"
 api: ["1.0.0"]
