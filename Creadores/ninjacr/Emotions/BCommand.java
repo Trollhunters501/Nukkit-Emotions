@@ -10,7 +10,7 @@ public class BCommand extends Command{
 	Main pl;
 	
 	public BCommand(Main pl) {
-		super("e", "Expresa tus emociones a todos", "Usage: /e");
+		super("e", "Express your emotions to everyone!", "Usage: /e");
 		this.pl = pl;
 		
 	}
@@ -26,17 +26,17 @@ public class BCommand extends Command{
 			
 		if(args[0].equalsIgnoreCase("help")) {
 			p.sendMessage(Utils.colors("§5-------------------§eEmotions§5------------------------"));
-			p.sendMessage(Utils.colors("§e/e crazy §f> §eUsalo cuándo estés enojado"));
-			p.sendMessage(Utils.colors("§e/e lol §f> §eUsalo cuándo quieras reírte"));
-			p.sendMessage(Utils.colors("§e/e sad §f> §eUsalo cuándo estés triste"));
-			p.sendMessage(Utils.colors("§e/e joy §f> §eUsalo cuándo estés feliz"));
-			p.sendMessage(Utils.colors("§e/e cry §f> §eUsalo cuándo quieras llorar"));
-			p.sendMessage(Utils.colors("§e/e happy §f> §eUsalo cuándo estés feliz"));
-			p.sendMessage(Utils.colors("§e/e sorry §f> §eUsalo cuándo quieras disculparte"));
-			p.sendMessage(Utils.colors("§e/e muse §f> §eUsalo cuándo estés pensativo"));
-			p.sendMessage(Utils.colors("§e/e obuda §f> §eUsalo cuándo está ofendido"));
-			p.sendMessage(Utils.colors("§e/e love <Jugador> §f> §eUsalo cuándo estés enamorado de alguien"));
-			p.sendMessage(Utils.colors("§e/e kick <Jugador> §f> §eUsalo cuándo quieras patear a alguien"));
+			p.sendMessage(Utils.colors("§e/e crazy §f> §eUse it when you're angry"));
+			p.sendMessage(Utils.colors("§e/e lol §f> §eUse it when you want to laugh"));
+			p.sendMessage(Utils.colors("§e/e sad §f> §eUse it when you're sad"));
+			p.sendMessage(Utils.colors("§e/e joy §f> §eUse it when you are happy"));
+			p.sendMessage(Utils.colors("§e/e cry §f> §eUse it when you want to cry"));
+			p.sendMessage(Utils.colors("§e/e happy §f> §eUse it when you are happy"));
+			p.sendMessage(Utils.colors("§e/e sorry §f> §eUse it when you want to apologize"));
+			p.sendMessage(Utils.colors("§e/e muse §f> §eUse it when you are thoughtful"));
+			p.sendMessage(Utils.colors("§e/e obuda §f> §eUse it when you're offending"));
+			p.sendMessage(Utils.colors("§e/e love <Player> §f> §eUse it when you are in love with someone"));
+			p.sendMessage(Utils.colors("§e/e kick <Player> §f> §eUse it when you want to kick someone"));
 			p.sendMessage(Utils.colors("§5-------------------§eEmotions§5------------------------"));
             
 		}
