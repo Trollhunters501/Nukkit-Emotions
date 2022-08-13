@@ -42,43 +42,43 @@ public class BCommand extends Command{
 		}
 		
 		else if(args[0].equalsIgnoreCase("crazy")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEsta enojado!.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fHe is angry!.");
 		}
 		else if(args[0].equalsIgnoreCase("lol")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fSe esta riendo!.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fHe's laughing!.");
 		}
 		else if(args[0].equalsIgnoreCase("sad")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá triste!.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fHe is sad!.");
 		}
 		else if(args[0].equalsIgnoreCase("joy")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá regocijandose! :D.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fIs rejoicing! :D.");
 			
 		}
 		else if(args[0].equalsIgnoreCase("cry")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá llorando.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fIs crying.");
 
 		}
 		else if(args[0].equalsIgnoreCase("happy")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá feliz! BD.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fIs happy! BD.");
 
 		}
 		else if(args[0].equalsIgnoreCase("sorry")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fSe disculpa!");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fApologizes!");
 		}
 		else if(args[0].equalsIgnoreCase("muse")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá pensando.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fHe is thinking.");
 
 		}
 		else if(args[0].equalsIgnoreCase("obuda")) {
-			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"&fEstá ofendido.");
+			Server.getInstance().broadcastMessage(prefix + "§6• "+name+"&fIs offended.");
 
 		}
 		else if(args[0].equalsIgnoreCase("love")) {
             Player name2 = pl.getServer().getPlayer(args[1]);
             if(name2 !=null) {
-				Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fEstá enamorado de §b "+name2.getName()+"§f.");
+				Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fIs in love with §b "+name2.getName()+"§f.");
 			}else{
-				p.sendMessage(Utils.colors(prefix+"§fNo se encontro ese jugador!"));
+				p.sendMessage(Utils.colors(prefix+"§fThat player was not found!"));
 			}
 			
 		}
@@ -86,15 +86,15 @@ public class BCommand extends Command{
 			Player name2 = pl.getServer().getPlayer(args[1]);
 			
 			if(name2 != null) {
-				Server.getInstance().broadcastMessage((prefix + "§6• "+name+"§fPateó a §b "+name2.getName()+"§f."));
+				Server.getInstance().broadcastMessage((prefix + "§6• "+name+"§f kicked to §b "+name2.getName()+"§f."));
                 
 			}else{
-				p.sendMessage(Utils.colors(prefix+"§fNo se encontro ese jugador!"));
+				p.sendMessage(Utils.colors(prefix+"§fThat player was not found!"));
 			}
 		
 			}
         else{
-			p.sendMessage(Utils.colors("§cError: Usa §f/e help"));
+			p.sendMessage(Utils.colors("§cError: Use §f/e help"));
 		}
 		}
         }
