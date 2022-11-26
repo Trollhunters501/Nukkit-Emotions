@@ -36,8 +36,8 @@ public class BCommand extends Command{
 			p.sendMessage(Utils.colors("§e/e sorry §f> §eUse it when you want to apologize"));
 			p.sendMessage(Utils.colors("§e/e muse §f> §eUse it when you are thoughtful"));
 			p.sendMessage(Utils.colors("§e/e obuda §f> §eUse it when you're offending"));
-			p.sendMessage(Utils.colors("§e/e love <Player> §f> §eUse it when you are in love with someone"));
-			p.sendMessage(Utils.colors("§e/e kick <Player> §f> §eUse it when you want to kick someone"));
+			p.sendMessage(Utils.colors("§e/e love §f> §eUse it when you are in love with someone"));
+			p.sendMessage(Utils.colors("§e/e kick §f> §eUse it when you want to kick someone"));
 			p.sendMessage(Utils.colors("§5-------------------§eEmotions§5------------------------"));
             
 		}
@@ -75,24 +75,11 @@ public class BCommand extends Command{
 
 		}
 		else if(args[0].equalsIgnoreCase("love")) {
-            Player name2 = pl.getServer().getPlayer(args[1]);
-            if(name2 !=null) {
-				Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§fIs in love with §b "+name2.getName()+"§f.");
-			}else{
-				p.sendMessage(Utils.colors(prefix+"§fThat player was not found!"));
-			}
+				Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§f is in love with someone!");
 			
 		}
 		else if(args[0].equalsIgnoreCase("kick")) {
-			Player name2 = pl.getServer().getPlayer(args[1]);
-			
-			if(name2 != null) {
-				Server.getInstance().broadcastMessage((prefix + "§6• "+name+"§f kicked to §b "+name2.getName()+"§f."));
-                
-			}else{
-				p.sendMessage(Utils.colors(prefix+"§fThat player was not found!"));
-			}
-		
+				Server.getInstance().broadcastMessage(prefix + "§6• "+name+"§f kicked someone");
 			}
         else{
 			p.sendMessage(Utils.colors("§cError: Use §f/e help"));
