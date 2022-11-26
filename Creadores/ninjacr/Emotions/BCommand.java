@@ -18,6 +18,7 @@ public class BCommand extends Command{
 	@Override
 	public boolean execute(CommandSender s, String label, String[] args) {
 		Player p = (Player)s;
+                p.sendMessage("§cError: Usa §f/e help");
 		String name = TextFormat.YELLOW + p.getName()+" ";
 		String prefix = Utils.colors("§b(§eEmotions§b) ");
 		
