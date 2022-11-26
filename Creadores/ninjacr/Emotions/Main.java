@@ -9,7 +9,7 @@ public class Main extends PluginBase implements Listener {
         this.getLogger().info("§eLoading...");
         this.getServer().getPluginManager().registerEvents(this, this);
 		CommandMap cmd = this.getServer().getCommandMap();
-		cmd.register("help", new BCommand(this));
+		cmd.register("e", new BCommand(this));
         this.getLogger().info("§aLoaded!");
 		
 	}
