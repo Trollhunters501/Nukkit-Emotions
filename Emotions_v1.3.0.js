@@ -1,5 +1,5 @@
-var prefix2em = "[Emotions-CREA-Edition] ";
-var prefixem = "§b[§aCreadores§b] ";
+var prefix2em = "[Emotions] ";
+var prefixem = "§b[§eEmotions§b] ";
 function onEnable(){
     logger.info(prefix2em + "§eCargando...");
     manager.createCommand("e", "Express your Feelings with a Command!, Expresar tus Sentimientos con un Comando!", "emotionsCommand");
